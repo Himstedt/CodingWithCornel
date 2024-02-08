@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link type="text/css" rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="fonts/themify-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("Y8VvS_MDD_CS3llzt");
+       })();
+    </script>
+ </head>
+
+ <body>
+     <header class="header">
+ 	    <div class="brand-box">
+ 	    </div>
+
+ 	    <div class="text-box">
+ 		    <h1 class="heading-primary">
+ 		    	<span class="heading-primary-main" id="ui">Cornel Himstedt</span>
+ 		    </h1>
+            <h3 class="heading-primary-sub">
+                JavaScript Entwickler mit Online-Marketing Expertise
+            </h3>
+ 	    </div>
+        <div class="header-bottom">
+            <a href="#scrollpoint" class="link"><i class="ti-angle-down" onclick="scroll()"></i></a>
+        </div>
+
+     </header>
+
+     <section class="wer" id="scrollpoint">
+        <div class="me">
+         <h2>Mein Profil</h2>
+         <div class="container-box2">
+          <div class="box1">
+              <h3>Webentwicklung</h3>
+              <p>Vom Desgin über das Frontend bis hin zum Backend. <br>
+                  Ich kreiere komplette Webprojekte mit einem Auge auf gute Bedienbarkeit. <br>
+                  Und einem Fokus darauf welche Features den Nutzern wirklich Mehrwert liefern. </p>
+          </div>
+          <div class="box2">
+              <h3>Online Marketing</h3>
+              <p>Mehr als nur funktional. Webseiten sollen User anziehen und begeistern. <br/>
+                 Meine Kenntnisse in SEO, Content Marketing und Strategien helfen Webapps genau
+                 darauf auszurichten.  </p>
+          </div>
+         </div>
+         <div class="box3">
+             <h3>Complementäre Fähigkeiten</h3>
+             <p> </p>
+         </div>
+        </div>
+     </section>
+
+     <section class="desc">
+         <div class="descritpion">
+             <h2>Skills</h2>
+             <div class="container-box">
+              <div class="container1">
+                  <img src="./img/javascript.png">
+                  <h3>JavaScript</h3>
+              </div>
+              <div class="container2">
+                  <img src="./img/react.png">
+                  <h3>React.js</h3>
+              </div>
+              <div class="container3">
+                  <img src="./img/node.jpg">
+                  <h3>Node.js</h3>
+              </div>
+             </div>
+         </div>
+
+     </section>
+
+     <section class="kent">
+         <h2>Hintergrundwissen</h2>
+         <div class="kentnisse">
+             <div class="opaque">
+                 <h3>Immobilienkaufmann</h3>
+                 <p>
+                    In meiner Ausbildung zum Immobilienkaufmann lernte ich nicht nur Rechtliches- und Kaufmännisches-Denken. <br> <br>
+                    Sondern auch wie entscheidend ein gutes Angebot ist. <br> <br>
+                     Was ein Käufer und ein Verkäufermarkt ist und das Verhältnis
+                    von Angebot zu Nachfrage. <br> <br>
+                    Das Kundenzufriedenheit essenziel für eine anhaltende Geschäftbeziehung ist.
+                 </p>
+             </div>
+         </div>
+     </section>
+
+    <button type="button" class="open-button" onclick="openForm()">Kontakt</button>
+
+     <div class="form-popup" id="myForm">
+      <form action="" class="form-container">
+        <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+        <h1>Kontakt</h1>
+
+        <input class="contact-input" type="text" id="name-contact" name="Name" placeholder="Name...">
+        <input type="text" name="username" placeholder="Your username" tabindex="-1" autocomplete="new-password">
+        <input class="contact-input" type="email" id="email-contact" name="Email Adress" placeholder="Email...">
+        <textarea placeholder="Nachricht.." id="message-contact" name="msg" required></textarea>
+
+        <button type="submit" class="btn" onclick="sendMail()">Senden</button>
+      </form>
+     </div>
+
+     <script src="script.js"></script>
+     <script src="index.js"></script>
+     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+ </body>
+
+</html>
